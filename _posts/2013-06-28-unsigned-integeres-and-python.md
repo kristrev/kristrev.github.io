@@ -12,7 +12,8 @@ The easiest (and portable!) way to get unsigned integers in Python is to import
 the required types from the [ctypes
 module](http://docs.python.org/2/library/ctypes.html). However, sometimes you
 need to convert Pythons 'normal' integers to unsigned values. As will be
-explained, the values are still signed integers (or long), but the effect is the same.
+explained, the values are still signed integers (or long), but this has little
+effect on the application.
 
 If you google _python unsigned integer_ or similar terms, you will find several
 posts telling you that in order to convert a signed to an unsigned value, it is
