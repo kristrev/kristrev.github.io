@@ -2,8 +2,8 @@
 layout: post
 title: "Unsigned integers and Python"
 description: ""
-category: 
-tags: []
+category: Programming
+tags: [python]
 ---
 
 {% include JB/setup %}
