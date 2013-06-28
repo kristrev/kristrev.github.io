@@ -3,6 +3,7 @@ layout: page
 title: kristrev.github.io
 tagline: Things I otherwise would forget
 ---
+{% include JB/setup %}
 
 Posts:
 
