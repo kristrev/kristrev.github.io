@@ -2,8 +2,8 @@
 layout: post
 title: "Help! Grub is installed on the wrong partition"
 description: "Moving grub to the right partition"
-category: 
-tags: []
+category: Linux
+tags: [Linux]
 ---
 {% include JB/setup %}
 
