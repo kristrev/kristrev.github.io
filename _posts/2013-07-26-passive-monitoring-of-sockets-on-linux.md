@@ -108,7 +108,7 @@ it is easier than it looks:
 * To match for port, the desired port has to be stored in the no-field of the
   follow-up inet_diag_bc_op-struct. You have to use the _GE/_LE-codes.
 * To match for IP/port, inet_diag_hostcond-struct has to be inserted after the
-  inet_diag_bc_op-struct. You also have to use the _COND-codes.
+  inet_diag_bc_op-struct. You also have to use the \_COND-codes.
 * To abort a comparison (i.e., you know the filter wont match), you have to make
   the len variable in `inet_diag_bc_run()` negative. What is contained in no has
   to be larger than the value of len.
@@ -117,3 +117,15 @@ it is easier than it looks:
 * Values, like port, are stored in the structs in host order.
 
 The example application contains one example of how to filter on ports.
+
+##Useful links
+
+* [sock_diag.c](http://lxr.free-electrons.com/source/net/core/sock_diag.c)
+  - This is where all socket-types register their handlers.
+* [inet_diag.c](http://lxr.free-electrons.com/source/net/ipv4/inet_diag.c)
+  - This where the different inet-sockets register their handlers. Also, where
+    filter is applied and the heavy-lifting for the generic information is done.
+* [tcp_diag.c](http://lxr.free-electrons.com/source/net/ipv4/tcp_diag.c)
+  - The TCP diag handler.
+* [unix/diag.c](http://lxr.free-electrons.com/source/net/unix/diag.c) - Example
+  of a non-inet handler, Unix sockets.
