@@ -17,11 +17,11 @@ then a pretty ok web user interface/REST API is provided.
 In the [MONROE EU project](https://www.monroe-project.eu/), which is going to
 develop a platform for measuring mobile broadband in Europe, they have selected
 the MF910 as their main modem for use by experimenters. Each measurement node
-will be multihomed and equipped with several modems, WAN port, etc. My company,
-[Celerway](http://celerway.com/), is one of the partners in the project and we
-were tasked with taking a closer look at the modem and make it work properly.
-Turned out we had our work cut out for us, the MF910 has some ... interesting
-stability issues and quirks.
+will be multihomed and equipped with multiple modems, a WIFI card, etc.. My
+company, [Celerway](http://celerway.com/), is one of the partners in the project
+and we were tasked with taking a closer look at the modem and make it work
+properly.  Turned out we had our work cut out for us, the MF910 has some ...
+interesting stability issues and quirks.
 
 ### Improving stability
 
